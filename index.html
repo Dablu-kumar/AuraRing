@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraRing | The AI-Powered Smart Ring</title>
+    <!-- Google Fonts: Outfit (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section with Fixed Navigation -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <a href="#hero" class="nav-logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="M12 3a9 9 0 0 1 9 9" stroke="url(#logo-grad)" />
+                        <defs>
+                            <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="var(--primary)" />
+                                <stop offset="100%" stop-color="var(--secondary)" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    AURA<span>RING</span>
+                </a>
+                
+                <!-- Desktop Nav Links -->
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Shop</a></li>
+                    <li><a href="#comparison">Trust</a></li>
+                    <li><a href="#specs">Specs</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <!-- Desktop CTA & Portal Controls -->
+                <div class="nav-right">
+                    <button class="nav-portal-btn" id="portal-open-btn" aria-label="Open User Portal">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="portal-svg">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                        <span>AuraPortal</span>
+                    </button>
+                    <button class="nav-cta open-preorder-btn">Pre-Order</button>
+                    <!-- Mobile Hamburger Toggle -->
+                    <button class="hamburger-menu" aria-label="Toggle Menu" id="hamburger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Drawer Navigation -->
+        <div class="mobile-drawer" id="mobile-drawer">
+            <ul class="drawer-links">
+                <li><a href="#hero" class="drawer-link">Home</a></li>
+                <li><a href="#about" class="drawer-link">About</a></li>
+                <li><a href="#features" class="drawer-link">Features</a></li>
+                <li><a href="#pricing" class="drawer-link">Shop</a></li>
+                <li><a href="#comparison" class="drawer-link">Trust</a></li>
+                <li><a href="#specs" class="drawer-link">Specs</a></li>
+                <li><a href="#testimonials" class="drawer-link">Testimonials</a></li>
+                <li><a href="#contact" class="drawer-link">Contact</a></li>
+                <li><a href="#" class="drawer-link" id="mobile-portal-open">AuraPortal Dashboard</a></li>
+            </ul>
+            <button class="drawer-cta open-preorder-btn">Pre-Order Now</button>
+        </div>
+        <div class="drawer-overlay" id="drawer-overlay"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-tag">Next-Gen Wearable Intelligence</div>
+            <h1>The Future of Health, <br><span class="gradient-text">On Your Finger.</span></h1>
+            <p>AuraRing monitors your vitals, tracks sleep, and offers personalized AI health coaching—all in a sleek, ultra-durable titanium band.</p>
+            
+            <!-- Finish Selector Customizer -->
+            <div class="finish-customizer">
+                <span class="customizer-label">Select Ring Finish:</span>
+                <div class="finish-swatches">
+                    <button class="swatch active" data-finish="stealth" title="Stealth Black" style="background-color: #1a1a1a;"></button>
+                    <button class="swatch" data-finish="nebula" title="Nebula Glow" style="background: linear-gradient(135deg, #00ffff, #8a2be2);"></button>
+                    <button class="swatch" data-finish="silver" title="Matte Silver" style="background-color: #cccccc;"></button>
+                    <button class="swatch" data-finish="gold" title="Rose Gold" style="background-color: #e5c158;"></button>
+                </div>
+                <span class="active-finish-name" id="finish-text">Stealth Black</span>
+            </div>
+
+            <div class="hero-buttons">
+                <button class="cta-button primary-cta open-preorder-btn">Pre-Order Now</button>
+                <a href="#features" class="cta-button secondary-cta">Explore Features</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About AuraRing Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-left-image">
+                <div class="about-glass-border">
+                    <div class="about-inner-glow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="about-icon-svg">
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M12 2a10 10 0 0 1 10 10A10 10 0 0 1 12 22A10 10 0 0 1 2 12A10 10 0 0 1 12 2" stroke-dasharray="4 2" />
+                            <circle cx="12" cy="12" r="5" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="about-right-text">
+                <div class="hero-tag" style="margin-bottom: 10px;">Our Vision</div>
+                <h2>The Story of AuraRing</h2>
+                <p>AuraRing was founded in 2024 by a team of biomedical engineers, software architects, and luxury designers. Our mission was simple: to shrink bulky, intrusive medical telemetry into a beautiful titanium band that fits seamlessly into your life.</p>
+                <p>Unlike massive smartwatches that require daily charging and disrupt sleep comfort, AuraRing fits on your finger, where the blood flow is closer to the skin surface, ensuring 3x more accurate cardiovascular readings.</p>
+                <div class="about-stats-row">
+                    <div class="about-stat-item">
+                        <strong>3.2g</strong>
+                        <span>Featherweight Titanium</span>
+                    </div>
+                    <div class="about-stat-item">
+                        <strong>7 Days</strong>
+                        <span>Continuous Battery</span>
+                    </div>
+                    <div class="about-stat-item">
+                        <strong>15+</strong>
+                        <span>Active Biosensors</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features Section -->
+    <section id="features">
+        <div class="section-header">
+            <h2 class="section-title">Designed for Your Life</h2>
+            <p class="section-subtitle">Cutting-edge tracking, premium materials, and unparalleled power efficiency.</p>
+        </div>
+        <div class="features-container">
+            <div class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    </svg>
+                </div>
+                <h2>Bio-Tracking</h2>
+                <p>Continuous heart rate, blood oxygen, heart rate variability, and skin temperature monitoring with medical-grade precision.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                    </svg>
+                </div>
+                <h2>Gesture Control</h2>
+                <p>Control your smart devices, slide presentations, snap photos, or silence alarms with simple micro-gestures of your hand.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="16" height="10" rx="2" ry="2" />
+                        <line x1="22" y1="11" x2="22" y2="13" />
+                    </svg>
+                </div>
+                <h2>7-Day Battery</h2>
+                <p>Never worry about daily charging. Our ultra-efficient custom battery architecture provides a full week of usage on a single charge.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive AuraSync Lab Section -->
+    <section id="aurasync-lab">
+        <div class="section-header">
+            <span class="hero-tag">AuraSync Lab</span>
+            <h2 class="section-title">Experience Wearable Intelligence</h2>
+            <p class="section-subtitle">Simulate pairing, rotate the ring in 3D, and watch real-time biosensor telemetry fluctuate live.</p>
+        </div>
+        
+        <div class="lab-container">
+            <!-- Left Panel: 3D Ring Visualizer -->
+            <div class="lab-panel ring-visualizer-panel">
+                <div class="panel-header-desc">
+                    <h3 class="panel-title">3D Holographic Model</h3>
+                    <p class="panel-desc">Move your mouse inside the box to rotate the Grade-5 titanium ring chassis in 3D space.</p>
+                </div>
+                
+                <div class="ring-3d-stage" id="lab-ring-stage">
+                    <div class="hologram-light-beam"></div>
+                    <div class="hologram-grid-floor"></div>
+                    <div class="hologram-scanner-beam"></div>
+                    <div class="ring-3d-model" id="lab-ring-3d">
+                        <div class="ring-face outer"></div>
+                        <div class="ring-face inner"></div>
+                        <div class="ring-sensor-dot s1"></div>
+                        <div class="ring-sensor-dot s2"></div>
+                        <div class="ring-sensor-dot s3"></div>
+                    </div>
+                </div>
+                
+                <!-- Customizer Swatches for 3D Ring -->
+                <div class="lab-customizer">
+                    <span>Active Chassis Finish:</span>
+                    <div class="lab-swatch-row">
+                        <button class="lab-swatch active" data-finish="stealth" title="Stealth Black" style="background-color: #1a1a1a;"></button>
+                        <button class="lab-swatch" data-finish="nebula" title="Nebula Glow" style="background: linear-gradient(135deg, #00ffff, #8a2be2);"></button>
+                        <button class="lab-swatch" data-finish="silver" title="Matte Silver" style="background-color: #cccccc;"></button>
+                        <button class="lab-swatch" data-finish="gold" title="Rose Gold" style="background-color: #e5c158;"></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Panel: Live Vitals Diagnostic -->
+            <div class="lab-panel diagnostics-panel">
+                <div class="panel-header-desc">
+                    <h3 class="panel-title">Live Diagnostics Console</h3>
+                    <p class="panel-desc">Click 'Pair Device' below to establish a simulated local Bluetooth connection and stream active biosensor feeds.</p>
+                </div>
+                
+                <div class="diagnostics-card-screen">
+                    <!-- Pairing Overlay -->
+                    <div class="pairing-overlay active" id="pairing-overlay">
+                        <div class="pairing-scanner-circle">
+                            <div class="scanner-ripple"></div>
+                            <div class="scanner-ripple ripple-2"></div>
+                            <svg class="pairing-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <circle cx="12" cy="12" r="9" />
+                                <path d="M12 3a9 9 0 0 1 9 9" />
+                            </svg>
+                        </div>
+                        <h4 id="pairing-status-text">AuraRing Nearby</h4>
+                        <button class="pair-action-btn" id="pair-device-btn">Pair & Sync Vitals</button>
+                    </div>
+                    
+                    <!-- Metrics Screen -->
+                    <div class="metrics-dashboard-screen" id="metrics-dashboard-screen">
+                        <div class="metrics-screen-header">
+                            <div class="status-indicator">
+                                <span class="status-pulse-dot"></span>
+                                <span>Bluetooth Connected</span>
+                            </div>
+                            <div class="battery-indicator">
+                                <span>Battery 98%</span>
+                            </div>
+                        </div>
+                        
+                        <!-- ECG Heartbeat Wave SVG -->
+                        <div class="ecg-graph-wrapper">
+                            <div class="graph-tag">ECG Live Feed (Heart Rate)</div>
+                            <svg class="ecg-svg" viewBox="0 0 300 80">
+                                <path class="ecg-bg-line" d="M 0 40 L 300 40" />
+                                <path class="ecg-live-line" id="ecg-path" d="M 0 40 L 40 40 L 50 40 L 60 10 L 70 70 L 80 40 L 90 40 L 130 40 L 140 10 L 150 70 L 160 40 L 170 40 L 210 40 L 220 10 L 230 70 L 240 40 L 300 40" />
+                            </svg>
+                        </div>
+                        
+                        <!-- Mini metrics Grid -->
+                        <div class="mini-metrics-row">
+                            <div class="mini-metric-item">
+                                <span class="metric-label">Heart Rate</span>
+                                <strong class="metric-val" id="sync-hr">72 <span class="unit">bpm</span></strong>
+                            </div>
+                            <div class="mini-metric-item">
+                                <span class="metric-label">HRV (Stress)</span>
+                                <strong class="metric-val" id="sync-hrv">64 <span class="unit">ms</span></strong>
+                            </div>
+                            <div class="mini-metric-item">
+                                <span class="metric-label">Oxygen (SpO2)</span>
+                                <strong class="metric-val" id="sync-spo2">99 <span class="unit">%</span></strong>
+                            </div>
+                        </div>
+                        
+                        <!-- Live log ticker -->
+                        <div class="console-logs-ticker" id="console-logs-ticker">
+                            <div class="log-entry">System pairing initialized...</div>
+                            <div class="log-entry">Calibrating temperature sensors: 36.8°C</div>
+                        </div>
+                        
+                        <button class="pair-action-btn disconnect-btn" id="disconnect-device-btn">Disconnect Device</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dedicated Product Models / Pricing Shop Section -->
+    <section id="pricing">
+        <div class="section-header">
+            <h2 class="section-title">Select Your AuraRing Model</h2>
+            <p class="section-subtitle">Find the perfect balance of finishes, advanced sensors, and coaching services.</p>
+        </div>
+
+        <div class="pricing-grid-container">
+            <!-- Horizon Model Card -->
+            <div class="pricing-card" data-pricing-model="horizon">
+                <span class="pricing-badge essential">Horizon Essential</span>
+                <div class="pricing-card-header">
+                    <h3>Horizon Edition</h3>
+                    <p class="pricing-subtitle">Streamlined health essentials</p>
+                    <div class="pricing-amount">
+                        <span class="price-val">₹24,999</span>
+                        <span class="currency">INR</span>
+                    </div>
+                </div>
+                
+                <!-- Swatches for Horizon -->
+                <div class="pricing-finish-picker">
+                    <span>Available finishes:</span>
+                    <div class="pricing-swatch-list">
+                        <button class="pricing-swatch active" data-finish="stealth" title="Stealth Black" style="background-color: #1a1a1a;"></button>
+                        <button class="pricing-swatch" data-finish="silver" title="Matte Silver" style="background-color: #cccccc;"></button>
+                    </div>
+                    <p class="pricing-swatch-label">Stealth Black finish</p>
+                </div>
+
+                <ul class="pricing-features-list">
+                    <li>24/7 Sleep analysis & HRV</li>
+                    <li>Activity tracker & Calorie burn</li>
+                    <li>Fighter-grade Aerospace Titanium</li>
+                    <li>Water resistant (IP68, 50m)</li>
+                    <li>Sizing Kit included</li>
+                </ul>
+
+                <button class="pricing-cta-btn buy-model-btn" data-model="Horizon" data-price="₹24,999 INR">Configure Horizon</button>
+            </div>
+
+            <!-- Heritage Model Card (Most Popular) -->
+            <div class="pricing-card featured" data-pricing-model="heritage">
+                <span class="pricing-badge popular">Heritage (Most Popular)</span>
+                <div class="pricing-card-header">
+                    <h3>Heritage Edition</h3>
+                    <p class="pricing-subtitle">Clinical-grade biosensing</p>
+                    <div class="pricing-amount">
+                        <span class="price-val">₹29,999</span>
+                        <span class="currency">INR</span>
+                    </div>
+                </div>
+                
+                <!-- Swatches for Heritage -->
+                <div class="pricing-finish-picker">
+                    <span>Available finishes:</span>
+                    <div class="pricing-swatch-list">
+                        <button class="pricing-swatch active" data-finish="stealth" title="Stealth Black" style="background-color: #1a1a1a;"></button>
+                        <button class="pricing-swatch" data-finish="nebula" title="Nebula Glow" style="background: linear-gradient(135deg, #00ffff, #8a2be2);"></button>
+                        <button class="pricing-swatch" data-finish="silver" title="Matte Silver" style="background-color: #cccccc;"></button>
+                    </div>
+                    <p class="pricing-swatch-label">Stealth Black finish</p>
+                </div>
+
+                <ul class="pricing-features-list">
+                    <li>All Horizon Essential sensors</li>
+                    <li>Skin Temperature IR sensors</li>
+                    <li>Pulse Oximeter SpO2 Tracking</li>
+                    <li>Micro-Gesture device shortcut</li>
+                    <li>Premium 100m Water resistance</li>
+                </ul>
+
+                <button class="pricing-cta-btn buy-model-btn popular" data-model="Heritage" data-price="₹29,999 INR">Configure Heritage</button>
+            </div>
+
+            <!-- Pro Model Card -->
+            <div class="pricing-card" data-pricing-model="pro">
+                <span class="pricing-badge ultimate">Pro Bundle</span>
+                <div class="pricing-card-header">
+                    <h3>Stealth Pro</h3>
+                    <p class="pricing-subtitle">VIP Health & Coaching Package</p>
+                    <div class="pricing-amount">
+                        <span class="price-val">₹34,999</span>
+                        <span class="currency">INR</span>
+                    </div>
+                </div>
+                
+                <!-- Swatches for Pro -->
+                <div class="pricing-finish-picker">
+                    <span>Available finishes:</span>
+                    <div class="pricing-swatch-list">
+                        <button class="pricing-swatch active" data-finish="stealth" title="Stealth Black" style="background-color: #1a1a1a;"></button>
+                        <button class="pricing-swatch" data-finish="nebula" title="Nebula Glow" style="background: linear-gradient(135deg, #00ffff, #8a2be2);"></button>
+                        <button class="pricing-swatch" data-finish="silver" title="Matte Silver" style="background-color: #cccccc;"></button>
+                        <button class="pricing-swatch" data-finish="gold" title="Rose Gold" style="background-color: #e5c158;"></button>
+                    </div>
+                    <p class="pricing-swatch-label">Stealth Black finish</p>
+                </div>
+
+                <ul class="pricing-features-list">
+                    <li>All Heritage Edition biosensors</li>
+                    <li>VIP AuraAI Health Coach access</li>
+                    <li>Free sizing kit replacement</li>
+                    <li>Exclusive 18k Rose Gold access</li>
+                    <li>2-Year extended warrant protection</li>
+                </ul>
+
+                <button class="pricing-cta-btn buy-model-btn" data-model="Stealth Pro" data-price="₹34,999 INR">Configure Pro</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Comparison Section (Hypoallergenic Titanium vs Cheap Copies) -->
+    <section id="comparison">
+        <div class="section-header">
+            <h2 class="section-title">The Value of Authenticity</h2>
+            <p class="section-subtitle">How the original AuraRing compares to cheap copies sold on other platforms.</p>
+        </div>
+        
+        <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Quality Factors</th>
+                        <th class="original-highlight">Original AuraRing</th>
+                        <th>Low-Budget Copies (Other Sites)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="factor-title">Materials & Build</td>
+                        <td class="original-value"><span class="check-icon">✓</span> Aerospace Grade 5 Titanium + scratch-proof DLC (Ultra-light, hypoallergenic)</td>
+                        <td class="competitor-value"><span class="cross-icon">✗</span> Cheap Zinc or Lead Alloy (Rusts, triggers skin allergies, heavy)</td>
+                    </tr>
+                    <tr>
+                        <td class="factor-title">Biosensor Telemetry</td>
+                        <td class="original-value"><span class="check-icon">✓</span> Medical-grade Infrared, HRV, SpO2 (True cardiovascular tracking)</td>
+                        <td class="competitor-value"><span class="cross-icon">✗</span> Flashing dummy green LEDs (Estimates random values, zero diagnostic accuracy)</td>
+                    </tr>
+                    <tr>
+                        <td class="factor-title">Battery Protection</td>
+                        <td class="original-value"><span class="check-icon">✓</span> Certified Japanese lithium cells with overcharge safety (Will not heat up)</td>
+                        <td class="competitor-value"><span class="cross-icon">✗</span> Unregulated low-grade batteries (Known risk of thermal swell/heating)</td>
+                    </tr>
+                    <tr>
+                        <td class="factor-title">Data Privacy & Security</td>
+                        <td class="original-value"><span class="check-icon">✓</span> AES-256 local Bluetooth encryption. We never sell your personal data</td>
+                        <td class="competitor-value"><span class="cross-icon">✗</span> Spyware companion app (Demands full phone access, logs and sells data)</td>
+                    </tr>
+                    <tr>
+                        <td class="factor-title">Warranty Coverage</td>
+                        <td class="original-value"><span class="check-icon">✓</span> 2-Year Official warranty + instant replacement service</td>
+                        <td class="competitor-value"><span class="cross-icon">✗</span> No warranty, zero customer support lines after payment</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Interactive Specifications Section -->
+    <section id="specs">
+        <div class="section-header">
+            <h2 class="section-title">Technical Specifications</h2>
+            <p class="section-subtitle">Deep dive into the craft and engineering behind AuraRing.</p>
+        </div>
+        
+        <div class="specs-wrapper">
+            <!-- Tabs Controls -->
+            <div class="specs-tabs">
+                <button class="tab-btn active" data-tab="materials">Materials & Craft</button>
+                <button class="tab-btn" data-tab="sensors">Biosensors</button>
+                <button class="tab-btn" data-tab="connectivity">Power & Tech</button>
+            </div>
+            
+            <!-- Tabs Content -->
+            <div class="specs-content-container">
+                <div class="specs-panel active" id="tab-materials">
+                    <div class="specs-row">
+                        <div class="specs-label">Chassis</div>
+                        <div class="specs-value">Fighter-grade Aerospace Titanium (Grade 5)</div>
+                    </div>
+                    <div class="specs-row">
+                        <div class="specs-label">Coating</div>
+                        <div class="specs-value">Diamond-like Carbon (DLC) Scratch Resistant Finish</div>
+                    </div>
+                    <div class="specs-row">
+                        <div class="specs-label">Water Resistance</div>
+                        <div class="specs-value">IP68 Rating - Up to 100 meters (330 feet) depth</div>
+                    </div>
+                    <div class="specs-row">
+                        <div class="specs-label">Weight</div>
+                        <div class="specs-value">2.4 to 3.6 grams (depending on size)</div>
+                    </div>
+                    <div class="specs-row">
+                        <div class="specs-label">Thickness</div>
+                        <div class="specs-value">2.5 mm sleek profile</div>
+                    </div>
+                </div>
+
+                <div class="specs-panel" id="tab-sensors">
+                    <div class="specs-row">
+                        <div class="specs-label">Heart Monitoring</div>
+                        <div class="specs-value">Green & Red LED photoplethysmography (PPG) sensors</div>
+                    </div>
+                    <div class="specs-row">
+                        <div class="specs-label">Temperature</div>
+                        <div class="specs-value">Medical-grade Infrared Non-Contact Skin Sensors</div>
+                    </div>
+                    <div class="specs-row">
+                        <div class="specs-label">Sleep Assessment</div>
+                        <div class="specs-value">3-Axis Accelerometer + Gyroscope for movement and respiration tracking</div>
+                    </div>
+                    <div class="specs-row">
+                        <div class="specs-label">Blood Oxygen</div>
+                        <div class="specs-value">Pulse Oximeter (SpO2) using optical red LED sensor</div>
+                    </div>
+                </div>
+
+                <div class="specs-panel" id="tab-connectivity">
+                    <div class="specs-row">
+                        <div class="specs-label">Battery Capacity</div>
+                        <div class="specs-value">22mAh custom lithium polymer, 7 days typical runtime</div>
+                    </div>
+                    <div class="specs-row">
+                        <div class="specs-label">Charging Method</div>
+                        <div class="specs-value">Wireless NFC-enabled induction charging dock (20% to 100% in 50 minutes)</div>
+                    </div>
+                    <div class="specs-row">
+                        <div class="specs-label">Connectivity</div>
+                        <div class="specs-value">Bluetooth Low Energy (BLE 5.2) with secure local encryption</div>
+                    </div>
+                    <div class="specs-row">
+                        <div class="specs-label">Device Support</div>
+                        <div class="specs-value">AuraCompanion App (iOS 15+ & Android 10+) with HealthKit / Google Fit integrations</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="section-header">
+            <h2 class="section-title">Loved by Innovators</h2>
+            <p class="section-subtitle">Read how AuraRing is transforming health tracking for people around the world.</p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial t-card-1">
+                <div class="quote-icon">“</div>
+                <p class="testimonial-text">"The AuraRing completely changed how I monitor my sleep. The data matches professional sleep studies, and the AI coach actually gives actionable daily advice rather than just charts."</p>
+                <div class="testimonial-user">
+                    <div class="user-avatar" style="background-color: #8a2be2;">SV</div>
+                    <div class="user-info">
+                        <h4>Sarah Valens</h4>
+                        <span>Biohacker & Athlete</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial t-card-2">
+                <div class="quote-icon">“</div>
+                <p class="testimonial-text">"As a designer, aesthetics are critical to me. AuraRing is the only wearable device that looks like premium jewelry while packing so much cutting-edge hardware. Highly recommend it!"</p>
+                <div class="testimonial-user">
+                    <div class="user-avatar" style="background-color: #00ffff; color: #111;">MK</div>
+                    <div class="user-info">
+                        <h4>Marcus Kaelen</h4>
+                        <span>Creative Director</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Ratings & Customer Reviews section -->
+    <section id="ratings-section">
+        <div class="ratings-inner-container">
+            <div class="ratings-left-overview">
+                <h2>Product Reviews</h2>
+                <div class="stars-summary">
+                    <span class="average-stars">4.9</span>
+                    <div class="rating-stars-list">
+                        <span class="gold-star">&#9733;</span>
+                        <span class="gold-star">&#9733;</span>
+                        <span class="gold-star">&#9733;</span>
+                        <span class="gold-star">&#9733;</span>
+                        <span class="gold-star">&#9733;</span>
+                    </div>
+                    <span class="ratings-count">Based on 1,482 buyer reviews</span>
+                </div>
+                <button class="write-review-btn" id="write-review-trigger">Write a Review</button>
+            </div>
+            <div class="reviews-list-container" id="reviews-list">
+                <!-- Initial Mock Review 1 -->
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="user-meta">
+                            <strong>Dave R.</strong>
+                            <span class="verified-buyer">Verified Buyer</span>
+                        </div>
+                        <span class="review-date">May 28, 2026</span>
+                    </div>
+                    <div class="item-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-body">Best smart wearable out there. Extremely light, I barely feel it when I sleep. Charging dock is sleek, battery easily holds up for 7 days.</p>
+                </div>
+                <!-- Initial Mock Review 2 -->
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="user-meta">
+                            <strong>Elena G.</strong>
+                            <span class="verified-buyer">Verified Buyer</span>
+                        </div>
+                        <span class="review-date">May 15, 2026</span>
+                    </div>
+                    <div class="item-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                    <p class="review-body">Rose Gold finish is absolutely gorgeous. The bio-tracking data matches my Fitbit, but having it on a ring is a much better form factor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Pre-Order Form -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Join the Inner Circle</h2>
+            <p>Get exclusive early access pricing and stay updated with product updates and shipping details. Pre-orders are open for a limited time.</p>
+            <form class="contact-form" id="newsletter-form">
+                <div class="input-group">
+                    <input type="email" placeholder="Enter your email address" required id="contact-email">
+                    <button type="submit" class="submit-button">Secure Priority Access</button>
+                </div>
+                <div class="form-feedback" id="newsletter-feedback"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="M12 3a9 9 0 0 1 9 9" stroke="url(#logo-grad-footer)" />
+                        <defs>
+                            <linearGradient id="logo-grad-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="var(--primary)" />
+                                <stop offset="100%" stop-color="var(--secondary)" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    AURA<span>RING</span>
+                </div>
+                <p>Refining human wellness through next-generation bio-wearable technology.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Product</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Shop</a></li>
+                    <li><a href="#comparison">Trust</a></li>
+                    <li><a href="#specs">Specs</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#" class="dummy-link">Privacy Policy</a></li>
+                    <li><a href="#" class="dummy-link">Terms of Service</a></li>
+                    <li><a href="#" class="dummy-link">Returns & Refund</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Connect</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon dummy-link" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon dummy-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon dummy-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AuraRing Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- ==========================================================================
+       MODAL 1: Interactive Pre-Order Configuration Modal
+       ========================================================================== -->
+    <div class="preorder-modal-backdrop" id="preorder-modal">
+        <div class="preorder-modal-container">
+            <button class="modal-close-btn" id="modal-close" aria-label="Close Preorder Form">&times;</button>
+            
+            <div class="modal-left-product">
+                <div class="modal-ring-view" id="modal-ring-view">
+                    <div class="glow-ring-inner">
+                        <div class="ring-gradient-core"></div>
+                    </div>
+                </div>
+                <div class="modal-product-tag">
+                    <h3 id="modal-summary-model" style="color:var(--secondary); font-family:'Outfit'; font-weight:700; font-size:18px;">AuraRing Heritage</h3>
+                    <h4 id="modal-summary-finish" style="font-size: 15px; font-weight: 500; margin-top:3px; opacity:0.9;">Stealth Black Finish</h4>
+                    <p id="modal-summary-specs" style="margin-top:6px; font-size:12.5px;">Titanium DLC Coating • Size <span id="modal-summary-size">Unselected</span></p>
+                    <span id="modal-summary-price" class="price-glow" style="display:block; margin-top:12px; font-weight:700; font-size:20px;">₹29,999 INR</span>
+                </div>
+            </div>
+            
+            <div class="modal-right-config">
+                <!-- Step Indicator -->
+                <div class="step-indicator">
+                    <span class="step-dot active" data-step="1"></span>
+                    <span class="step-dot" data-step="2"></span>
+                    <span class="step-dot" data-step="3"></span>
+                    <span class="step-dot" data-step="4"></span>
+                </div>
+                
+                <!-- Configurator Title -->
+                <div class="config-header">
+                    <h2>Configure AuraRing</h2>
+                    <p id="config-step-desc">Step 1: Choose your finish style</p>
+                </div>
+                
+                <!-- STEP 1: FINISH SELECTOR -->
+                <div class="config-step-panel active" id="step-panel-1">
+                    <div class="finish-card-list">
+                        <div class="modal-finish-option active" data-finish="stealth" data-finish-option="stealth">
+                            <span class="color-indicator" style="background-color: #1a1a1a;"></span>
+                            <div class="option-details">
+                                <h4>Stealth Black</h4>
+                                <p>Sleek Diamond-Like Carbon protection.</p>
+                            </div>
+                        </div>
+                        <div class="modal-finish-option" data-finish="nebula" data-finish-option="nebula">
+                            <span class="color-indicator" style="background: linear-gradient(135deg, #00ffff, #8a2be2);"></span>
+                            <div class="option-details">
+                                <h4>Nebula Glow</h4>
+                                <p>Anodized chromatic chameleon finish.</p>
+                            </div>
+                        </div>
+                        <div class="modal-finish-option" data-finish="silver" data-finish-option="silver">
+                            <span class="color-indicator" style="background-color: #cccccc;"></span>
+                            <div class="option-details">
+                                <h4>Matte Silver</h4>
+                                <p>Classic sandblasted titanium shine.</p>
+                            </div>
+                        </div>
+                        <div class="modal-finish-option" data-finish="gold" data-finish-option="gold">
+                            <span class="color-indicator" style="background-color: #e5c158;"></span>
+                            <div class="option-details">
+                                <h4>Rose Gold</h4>
+                                <p>Premium 18k vapor-deposited gold coating.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="step-next-btn" id="next-btn-1">Continue to Ring Size</button>
+                </div>
+
+                <!-- STEP 2: SIZE SELECTOR -->
+                <div class="config-step-panel" id="step-panel-2">
+                    <div class="size-selection-grid">
+                        <button class="size-btn" data-size="6">US 6</button>
+                        <button class="size-btn" data-size="7">US 7</button>
+                        <button class="size-btn" data-size="8">US 8</button>
+                        <button class="size-btn" data-size="9">US 9</button>
+                        <button class="size-btn" data-size="10">US 10</button>
+                        <button class="size-btn" data-size="11">US 11</button>
+                        <button class="size-btn" data-size="12">US 12</button>
+                    </div>
+                    <div class="size-helper-box">
+                        <p><strong>Unsure about your size?</strong> Select size <strong>"US 8"</strong> for a complimentary sizing kit sent to your home first.</p>
+                    </div>
+                    <div class="step-nav-buttons">
+                        <button class="step-back-btn" id="back-btn-2">Back</button>
+                        <button class="step-next-btn disabled" id="next-btn-2" disabled>Choose Size to Continue</button>
+                    </div>
+                </div>
+
+                <!-- STEP 3: DETAILS FORM -->
+                <div class="config-step-panel" id="step-panel-3">
+                    <form class="checkout-form-fields" id="preorder-checkout-form">
+                        <div class="form-row">
+                            <label for="checkout-name">Full Name</label>
+                            <input type="text" id="checkout-name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-row">
+                            <label for="checkout-email">Email Address</label>
+                            <input type="email" id="checkout-email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-row">
+                            <label for="checkout-address">Shipping Address</label>
+                            <input type="text" id="checkout-address" required placeholder="123 Smart Wearable Lane">
+                        </div>
+                        <div class="form-row">
+                            <label for="checkout-city">City / Postal Code</label>
+                            <input type="text" id="checkout-city" required placeholder="Silicon Valley, 94025">
+                        </div>
+                        
+                        <div class="step-nav-buttons">
+                            <button class="step-back-btn" type="button" id="back-btn-3">Back</button>
+                            <button class="step-next-btn" type="submit" id="submit-order-btn">Submit Pre-Order</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- STEP 4: RECEIPT / SUCCESS -->
+                <div class="config-step-panel" id="step-panel-4">
+                    <div class="success-screen">
+                        <div class="success-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Pre-Order Reserved!</h3>
+                        <p class="success-desc">Thank you for securing your AuraRing. A confirmation receipt has been sent to your email.</p>
+                        
+                        <div class="receipt-box">
+                            <div class="receipt-item">
+                                <span>Order Number:</span>
+                                <strong id="receipt-order-id">AR-2026-98104</strong>
+                            </div>
+                            <div class="receipt-item">
+                                <span>Product:</span>
+                                <strong id="receipt-product">AuraRing - Stealth Black</strong>
+                            </div>
+                            <div class="receipt-item">
+                                <span>Size:</span>
+                                <strong id="receipt-size">US 9</strong>
+                            </div>
+                            <div class="receipt-item">
+                                <span>Early Price:</span>
+                                <strong class="price-glow" id="receipt-price-val">₹29,999 INR</strong>
+                            </div>
+                        </div>
+                        
+                        <button class="step-next-btn" id="receipt-close-btn">Close & Continue Browsing</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==========================================================================
+       MODAL 2: AuraPortal (User Dashboard Modal)
+       ========================================================================== -->
+    <div class="portal-backdrop" id="aura-portal-modal">
+        <div class="portal-container">
+            <button class="portal-close-btn" id="portal-close" aria-label="Close Account Portal">&times;</button>
+            
+            <!-- Left Side Navbar inside Portal -->
+            <div class="portal-left-nav">
+                <div class="portal-user-card">
+                    <div class="user-portal-avatar" id="portal-avatar">A</div>
+                    <div class="user-portal-meta">
+                        <h4 id="portal-user-name">Guest Member</h4>
+                        <span id="portal-user-email">guest@auraring.com</span>
+                    </div>
+                </div>
+                <div class="portal-nav-menu">
+                    <button class="portal-menu-item active" data-panel="profile">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        Health Stats
+                    </button>
+                    <button class="portal-menu-item" data-panel="orders">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                        Orders & Returns
+                    </button>
+                    <button class="portal-menu-item" data-panel="add-review">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        Submit Review
+                    </button>
+                </div>
+                <button class="portal-signout-btn" id="portal-signout-trigger">Sign Out</button>
+            </div>
+            
+            <!-- Right Side Dashboard Screens -->
+            <div class="portal-right-content">
+                
+                <!-- SCREEN 0: AUTHENTICATION (Shown when not logged in) -->
+                <div class="portal-panel active" id="portal-panel-auth">
+                    <div class="portal-auth-header">
+                        <h2>Create Your Aura Account</h2>
+                        <p>Register to unlock active bio-health charts, review orders, configure returns, and add feedback ratings.</p>
+                    </div>
+                    <form class="portal-auth-form" id="portal-registration-form">
+                        <div class="form-row">
+                            <label for="reg-name">Full Name</label>
+                            <input type="text" id="reg-name" required placeholder="Alexander Vance">
+                        </div>
+                        <div class="form-row">
+                            <label for="reg-email">Email Address</label>
+                            <input type="email" id="reg-email" required placeholder="alex@vance.com">
+                        </div>
+                        <div class="form-row">
+                            <label for="reg-password">Password</label>
+                            <input type="password" id="reg-password" required placeholder="••••••••" minlength="6">
+                        </div>
+                        <button type="submit" class="auth-submit-btn">Register & Open Dashboard</button>
+                    </form>
+                </div>
+
+                <!-- SCREEN 1: PROFILE / HEALTH STATS -->
+                <div class="portal-panel" id="portal-panel-profile">
+                    <div class="panel-header">
+                        <h2>My Bio-Health Metrics</h2>
+                        <p>Real-time telemetry gathered from your connected AuraRing.</p>
+                    </div>
+                    
+                    <div class="health-dashboard-grid">
+                        <div class="dashboard-metric-card">
+                            <div class="metric-top">
+                                <span>Sleep Score</span>
+                                <strong class="score-number sleep">88 / 100</strong>
+                            </div>
+                            <div class="progress-bar-glow">
+                                <div class="bar-fill sleep" style="width: 88%;"></div>
+                            </div>
+                            <p class="metric-summary">Optimal recovery. Your REM sleep increased by 14 minutes last night.</p>
+                        </div>
+                        
+                        <div class="dashboard-metric-card">
+                            <div class="metric-top">
+                                <span>Readiness Score</span>
+                                <strong class="score-number readiness">92 / 100</strong>
+                            </div>
+                            <div class="progress-bar-glow">
+                                <div class="bar-fill readiness" style="width: 92%;"></div>
+                            </div>
+                            <p class="metric-summary">Peak state. Heart Rate Variability is high, indicating you are fully recovered.</p>
+                        </div>
+
+                        <div class="dashboard-metric-card">
+                            <div class="metric-top">
+                                <span>Activity Calories</span>
+                                <strong class="score-number activity">450 / 600 kcal</strong>
+                            </div>
+                            <div class="progress-bar-glow">
+                                <div class="bar-fill activity" style="width: 75%;"></div>
+                            </div>
+                            <p class="metric-summary">75% of your daily burn target. An active walk will close this goal.</p>
+                        </div>
+
+                        <div class="dashboard-metric-card">
+                            <div class="metric-top">
+                                <span>Ring Battery</span>
+                                <strong class="score-number battery">78%</strong>
+                            </div>
+                            <div class="progress-bar-glow">
+                                <div class="bar-fill battery" style="width: 78%;"></div>
+                            </div>
+                            <p class="metric-summary">5 days of battery remaining. NFC charging pad is connected.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCREEN 2: ORDER HISTORY & RETURNS -->
+                <div class="portal-panel" id="portal-panel-orders">
+                    <div class="panel-header">
+                        <h2>Orders & Returns Center</h2>
+                        <p>Track delivery state, download receipts, or initiate size/warranty returns.</p>
+                    </div>
+                    
+                    <!-- Dynamic Orders List -->
+                    <div class="portal-orders-list" id="portal-orders-list">
+                        <!-- Initial Mock Order -->
+                        <div class="order-card-row" id="order-mock-48903">
+                            <div class="order-left-info">
+                                <strong>Order ID: AR-2026-48903</strong>
+                                <span>Product: AuraRing (Stealth Black) • Size 10</span>
+                                <span class="order-date">Purchased: May 02, 2026</span>
+                            </div>
+                            <div class="order-right-actions">
+                                <span class="order-status-badge delivered">Delivered</span>
+                                <button class="order-action-btn return-trigger-btn" data-order-id="AR-2026-48903" data-product="AuraRing (Stealth Black) • Size 10">Request Return</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Returns Portal Wizard -->
+                    <div class="returns-wizard-container" id="returns-wizard">
+                        <div class="wizard-header">
+                            <button class="return-back-to-list-btn" id="cancel-return-btn">&larr; Back to Order History</button>
+                            <h3>Initiate Return for: <span id="return-target-product">Ring Size 10</span></h3>
+                            <p>Order Reference: <strong id="return-target-id">AR-2026-48903</strong></p>
+                        </div>
+                        
+                        <!-- Step 1: Select Reason -->
+                        <div class="return-wizard-step active" id="return-step-1">
+                            <div class="form-row">
+                                <label for="return-reason">Reason for Return</label>
+                                <select id="return-reason" class="portal-dropdown-select">
+                                    <option value="wrong-size">Incorrect Size (Need replacement)</option>
+                                    <option value="changed-mind">Changed my mind / Refund</option>
+                                    <option value="faulty">Technical malfunction / Warranty</option>
+                                </select>
+                            </div>
+                            <div class="form-row" id="return-size-exchange-row">
+                                <label for="exchange-size">Requested Replacement Size</label>
+                                <select id="exchange-size" class="portal-dropdown-select">
+                                    <option value="6">US 6</option>
+                                    <option value="7">US 7</option>
+                                    <option value="8">US 8</option>
+                                    <option value="9">US 9</option>
+                                    <option value="10">US 10</option>
+                                    <option value="11">US 11</option>
+                                    <option value="12">US 12</option>
+                                </select>
+                            </div>
+                            <button class="auth-submit-btn" id="confirm-return-reasons">Generate Shipping Return Label</button>
+                        </div>
+
+                        <!-- Step 2: Shipping Label Display -->
+                        <div class="return-wizard-step" id="return-step-2">
+                            <div class="return-label-box">
+                                <div class="return-barcode-visual">
+                                    <div class="barcode-stripe text-align-center">AURA-RETURN-AUTH-BARCODE</div>
+                                    <div class="barcode-image">
+                                        <span>||||||| | ||||| | ||| |||| | ||||| |||</span>
+                                    </div>
+                                </div>
+                                <div class="label-address-details">
+                                    <p><strong>AuraRing Fulfillment Logistics</strong></p>
+                                    <p>Attn: Return processing division</p>
+                                    <p>982 Tech Innovation Circle, Dock D</p>
+                                    <p>San Jose, CA, 95131</p>
+                                </div>
+                            </div>
+                            <div class="return-status-notes">
+                                <p><strong>Instructions:</strong> Print this shipping authorization, slip it inside the box, and drop the package at any USPS center. Shipping costs are fully pre-paid by AuraRing.</p>
+                            </div>
+                            <button class="auth-submit-btn" id="complete-return-wizard">Complete Return Request</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCREEN 3: WRITE PRODUCT REVIEW -->
+                <div class="portal-panel" id="portal-panel-add-review">
+                    <div class="panel-header">
+                        <h2>Submit Product Rating</h2>
+                        <p>Your reviews help other buyers select the correct finish and size. Verified ratings are posted live.</p>
+                    </div>
+                    <form class="portal-review-form" id="portal-review-form">
+                        <div class="form-row">
+                            <label>Product Rating</label>
+                            <div class="star-rating-selector" id="rating-star-selector">
+                                <span class="star-input" data-rating="1">&#9734;</span>
+                                <span class="star-input" data-rating="2">&#9734;</span>
+                                <span class="star-input" data-rating="3">&#9734;</span>
+                                <span class="star-input" data-rating="4">&#9734;</span>
+                                <span class="star-input" data-rating="5">&#9734;</span>
+                            </div>
+                            <input type="hidden" id="review-stars-value" value="5" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="review-title">Review Title</label>
+                            <input type="text" id="review-title" placeholder="Extremely comfortable, accurate sleep tracker" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="review-comments">Detailed Review Comments</label>
+                            <textarea id="review-comments" placeholder="Describe your experience with the battery life, material scratch resistance, or app metrics..." required rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="auth-submit-btn">Publish Review Live</button>
+                        <div id="review-form-feedback" style="margin-top: 15px; font-weight: 600; text-align: center; color: #00ff88;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==========================================================================
+       MODAL 3: Floating AuraAI Health Assistant Drawer
+       ========================================================================== -->
+    <div class="ai-assistant-wrapper">
+        <!-- Floating Bubble -->
+        <button class="ai-floating-bubble" id="ai-bubble-btn" aria-label="Open Health AI Advisor">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="bubble-logo">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 8v8M8 12h8"/>
+            </svg>
+            <span class="bubble-label">Ask AuraAI</span>
+            <span class="active-badge-pulse"></span>
+        </button>
+        
+        <!-- Drawer Container -->
+        <div class="ai-drawer-container" id="ai-drawer">
+            <div class="ai-drawer-header">
+                <div class="ai-bot-avatar">
+                    <span class="avatar-sparkle">&#10022;</span>
+                </div>
+                <div class="ai-title-meta">
+                    <h4>AuraAI Health Advisor</h4>
+                    <span class="ai-status">Online • Health Intelligence v2.0</span>
+                </div>
+                <button class="ai-drawer-close" id="ai-drawer-close">&times;</button>
+            </div>
+            
+            <!-- Tabs Controls -->
+            <div class="ai-drawer-tabs">
+                <button class="ai-tab-btn active" data-aitab="chat">AI Chat</button>
+                <button class="ai-tab-btn" data-aitab="scanner">Finger Scan</button>
+                <button class="ai-tab-btn" data-aitab="analyzer">Analyze File</button>
+            </div>
+            
+            <!-- Tab Contents -->
+            <div class="ai-drawer-body">
+                <!-- TAB 1: AI HEALTH CHAT -->
+                <div class="ai-tab-content active" id="aitab-chat">
+                    <div class="ai-chat-log" id="ai-chat-log">
+                        <div class="ai-message bot">
+                            <p>Hi, I am AuraAI. How can I assist you with the AuraRing today? You can ask me about ring specs, sizing, shipping updates, sleep telemetry, or device troubleshooting.</p>
+                        </div>
+                    </div>
+                    <form class="ai-chat-input-area" id="ai-chat-input-form">
+                        <input type="text" id="ai-user-message-input" placeholder="Type a message..." required autocomplete="off">
+                        <button type="submit" class="ai-send-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- TAB 2: FINGER SCANNER -->
+                <div class="ai-tab-content" id="aitab-scanner">
+                    <div class="scanner-inner-panel">
+                        <p class="scanner-desc">Upload a high-contrast photo of your hand/finger next to a standard plastic card (e.g., credit card) for reference to auto-scan your perfect ring size.</p>
+                        
+                        <div class="scanner-dropzone" id="scanner-upload-area">
+                            <svg class="scanner-upload-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-2-2h-3l-2.58-3.42A2 2 0 0 0 11.82 2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h15a2 2 0 0 0 2-2z"/>
+                                <circle cx="12" cy="11" r="4"/>
+                            </svg>
+                            <span>Drag and drop finger image, or click to upload</span>
+                            <input type="file" id="scanner-file-picker" accept="image/*" style="display: none;">
+                        </div>
+
+                        <!-- Active Scan Overlay Graphic -->
+                        <div class="scanner-preview-box" id="scanner-preview-box" style="display: none;">
+                            <div class="scanning-laser-line"></div>
+                            <div class="scan-target-circle"></div>
+                            <img id="scanner-image-preview" src="#" alt="Finger scan preview">
+                        </div>
+
+                        <div class="scanner-results-area" id="scanner-results" style="display: none;">
+                            <!-- Diagnostics printed here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 3: REPORT ANALYZER -->
+                <div class="ai-tab-content" id="aitab-analyzer">
+                    <div class="analyzer-inner-panel">
+                        <p class="scanner-desc">Upload your raw sleep files (CSV), heart monitors, or wearable reports. AuraAI will process the data metrics and build a custom diagnostic summary report.</p>
+                        
+                        <div class="scanner-dropzone" id="analyzer-upload-area">
+                            <svg class="scanner-upload-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                            <span>Upload Sleep CSV or Health Report (PDF/TXT)</span>
+                            <input type="file" id="analyzer-file-picker" accept=".csv,.txt,.pdf" style="display: none;">
+                        </div>
+
+                        <div class="analyzer-loading-box" id="analyzer-loader" style="display: none;">
+                            <span class="spinner-circle"></span>
+                            <p>Analyzing health metrics, compiling Sleep scores...</p>
+                        </div>
+
+                        <div class="analyzer-results-area" id="analyzer-results" style="display: none;">
+                            <!-- Diagnostic metrics inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scroll-top-btn" aria-label="Scroll to Top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Custom Logic scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
