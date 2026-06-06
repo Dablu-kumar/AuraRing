@@ -1,64 +1,57 @@
-# AuraRing | Interactive Smart Ring Experience
+# AuraRing Landing Page
 
-A premium, fully responsive product landing page and interactive diagnostics dashboard for the futuristic **AuraRing** wearable. Built entirely from scratch using vanilla web technologies, this project showcases modern UI/UX design trends, clean layout architecture, and complex frontend state management.
+AuraRing is a concept landing page for a premium smart ring brand. It includes interactive sections like product customisation, pricing, a mock dashboard, and a small AI-style help assistant.
 
-🚀 **[View Live Demo](https://Dablu-kumar.github.io/aura-ring-landing/)** *(Replace with your actual GitHub Pages link once saved)*
+The goal of this project is to show frontend development, responsive UI design, DOM interaction, and product-style presentation using HTML, CSS, and JavaScript.
 
----
+## Features
 
-## 🌟 Key Features
+- Responsive landing page for desktop and mobile screens
+- Hero section with product finish options
+- Product feature cards and specification sections
+- Pricing cards for different AuraRing models
+- Multi-step pre-order modal
+- Mock user dashboard called AuraPortal
+- Order history and return request flow
+- Review form that adds new reviews to the page
+- AuraAI assistant with chat, finger scan mockup, and health report mock analyzer
+- AuraSync lab with a CSS 3D ring, pairing animation, and live vitals simulation
+- Indian Rupee pricing used in the product cards and checkout flow
 
-### 1. AuraSync Experience Lab
-* **Interactive 3D Hologram**: A 3D smart ring model constructed in pure CSS. Move your mouse to rotate the ring chassis along the X and Y axes, or click and drag for a 360-degree rotation.
-* **Bluetooth Pairing Simulator**: Click "Pair Device" to trigger an animated pairing sequence with expanding neon radar waves.
-* **Live Biosensors Telemetry**: Streams a glowing ECG heartbeat wave (pulsing SVG line animation) and fluctuates real-time counts for Heart Rate (bpm), Stress HRV (ms), and Blood Oxygen (SpO2 %) alongside a scrolling developer logs console.
+## Tech Stack
 
-### 2. AuraPortal (User Dashboard Center)
-* **Account Registration**: A mock auth flow that compiles user credentials and updates page-level navigation states.
-* **Personal Health Stats**: Dynamic Recovery, Readiness, and Active Burn metrics visualized with glowing circular progress meters.
-* **Order History & Returns Hub**: Generates dynamic pre-order references and features an interactive Return Request Wizard that outputs pre-paid shipping authorization barcodes.
-* **Buyer Reviews Publisher**: Users can write ratings, select stars (1-5), and publish feedback reviews which append instantly to the live landing page review feed.
+- HTML5 for the page structure
+- CSS3 for styling, layout, animations, and responsive design
+- JavaScript for all interactions and dynamic UI updates
 
-### 3. AuraAI Health Advisor
-* **NLP Chatbot Console**: An AI-style typewriter assistant that answers queries on charging, certified biosensors, titanium DLC protection, sizing recommendations, and delivery updates.
-* **Finger Size Scanner**: Drag and drop visualizer that scans images to calculate finger sizes with vertical laser scanner overlays.
-* **Sleep Report Analyzer**: Mock csv/txt uploader displaying structured recovery stage insights.
+I did not use any frontend framework for this project. Everything is written with vanilla HTML, CSS, and JavaScript.
 
-### 4. Trust Matrix & Localization
-* **Quality Assurance Table**: A side-by-side comparison matrix (original vs counterfeit alloy copies) designed to optimize checkout conversions.
-* **Indian Rupee (INR) Pricing**: Localized checkout metrics and pre-order receipt logs configured in Indian Rupees (₹).
+## Project Files
 
----
+- `index.html` - Main page structure and sections
+- `styles.css` - Styling, layout, animations, and responsive CSS
+- `app.js` - JavaScript for modals, forms, dashboard, chatbot, and live interactions
+- `hero-ring.png` - Product image used in the project
+- `README.md` - Project documentation
 
-## 🛠️ Technologies Used
+## How to Run
 
-* **Structure**: HTML5 (Clean, semantic tags for SEO)
-* **Styling**: Vanilla CSS3 (Custom variables, glassmorphism, responsive breakpoints)
-* **Layouts**: 
-  * **CSS Grid** (for the features section and footer layout)
-  * **Flexbox** (for the testimonials section and nav items)
-* **Interactions**: ES6+ JavaScript (DOM manipulation, coordinate mapping, animation intervals)
+Open `index.html` in a browser.
 
----
+No installation is required because this project does not use npm packages or a build tool.
 
-## 📂 Project Registry
+## What I Practiced
 
-* `index.html` - Semantic page structure, modals, portal containers, and SVG vectors.
-* `styles.css` - Custom styling tokens, 3D perspective grids, animations, and media overrides.
-* `app.js` - Dynamic customization triggers, BLE streams, chatbot response logs, and order handlers.
-* `hero-ring.png` - Visual cinematic mockup of the AuraRing.
-* `README.md` - Technical project documentation.
+While making this project, I practiced:
 
----
+- Building a complete landing page layout
+- Using CSS Grid and Flexbox
+- Creating responsive designs
+- Handling modals and forms with JavaScript
+- Updating the DOM dynamically
+- Making simple UI simulations like pairing, health stats, and chatbot replies
+- Organising a larger frontend file with many sections and interactions
 
-## 💻 Local Setup
+## Note
 
-1. Clone or download this folder:
-   ```bash
-   git clone https://github.com/Dablu-kumar/aura-ring-landing.git
-   ```
-2. Open the directory:
-   ```bash
-   cd aura-ring-landing
-   ```
-3. Open `index.html` directly in any web browser to view the site!
+AuraRing is a fictional product concept created as a project to demonstrate frontend development, UI design, and interactive web experiences.
